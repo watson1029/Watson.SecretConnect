@@ -1,0 +1,21 @@
+﻿<Window x:Class="Watson.SecretGenerate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Watson.SecretGenerate"
+        mc:Ignorable="d"
+        Title="SecretConnectGenerate" Height="660" Width="464" FontSize="14">
+    <Grid>
+        <Label Content="SecretKey" HorizontalAlignment="Left" Margin="40,40,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="SecretKey" HorizontalAlignment="Left" Height="23" Margin="131,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"/>
+        <CheckBox x:Name="IsRandomIV" Content="IsRandomIV" HorizontalAlignment="Left" Margin="313,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="SecretConnect" HorizontalAlignment="Left" Margin="40,267,0,0" VerticalAlignment="Top"/>
+        <Label Content="SecretIV" HorizontalAlignment="Left" Margin="40,451,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Generate" Content="Generate" HorizontalAlignment="Left" Margin="313,86,0,0" VerticalAlignment="Top" Width="100" Click="Generate_Click"/>
+        <Label Content="ConnectionString" HorizontalAlignment="Left" Margin="40,83,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="ConnectionString" HorizontalAlignment="Left" Height="127" Margin="45,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="368"/>
+        <TextBox x:Name="SecretConnect" HorizontalAlignment="Left" Height="127" Margin="45,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="368"/>
+        <TextBox x:Name="SecretIV" HorizontalAlignment="Left" Height="127" Margin="45,484,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="368"/>
+    </Grid>
+</Window>
