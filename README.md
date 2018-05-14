@@ -49,6 +49,7 @@ Watson.SecretConnect
 ```
 ## 4. 修改Context继承
 修改Context.cs和Context.tt
+
 从继承System.Data.Entity.DbContext修改成继承Watson.SecretConnect.SecretEF
 ```CSharp
 public class myEntity : SecretEF
