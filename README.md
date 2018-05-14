@@ -21,7 +21,7 @@ Watson.SecretConnect
 1.3 IsRandomIV是否随机生成偏移向量
 ![generate images](Watson.SecretConnect/加密截图.png)
 ## 2. 引用NuGet
-        Install-Package Microsoft.AspNet.SignalR
+        Install-Package Watson.SecretConnect
 ## 3. 添加配置文件节点
 3.1 添加ConnectionString
 ```CSharp
