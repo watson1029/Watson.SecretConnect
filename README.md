@@ -17,8 +17,11 @@ Watson.SecretConnect
 # EntityFramework使用方法
 ## 1. 生成SecretConnect和SecretIV
 1.1 运行Watson.SecretGenerate.exe
+
 1.2 输入SecretKey
+
 1.3 IsRandomIV是否随机生成偏移向量
+
 ![generate images](Watson.SecretConnect/加密截图.png)
 ## 2. 引用NuGet
         Install-Package Watson.SecretConnect
