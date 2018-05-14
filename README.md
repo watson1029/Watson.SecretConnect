@@ -13,7 +13,6 @@ Watson.SecretConnect
 5. SecretKey+AttachKey按【一定规则】混合摘要，按【一定规则】提取64位生成DesKey
 6. AttachIV摘要后按【一定规则】提取128位作为DesIV
 7. 使用Des加密算法加密512位IV -> 输出SecretIV
-=====
 
 # EntityFramework使用方法
 ## 1. 生成SecretConnect和SecretIV
