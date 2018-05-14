@@ -25,8 +25,6 @@ namespace Watson.SecretConnect
         protected SecretEF()
             : base() { }
         protected SecretEF(DbCompiledModel model)
-            : base()
-        {
-        }
+            : base() { }
     }
 }
