@@ -48,6 +48,7 @@ Watson.SecretConnect
 </configuration>
 ```
 # 在EntityFramework中使用
+## 修改Context
 修改Context.cs和Context.tt的继承关系
 
 从继承System.Data.Entity.DbContext修改成继承Watson.SecretConnect.SecretEF
@@ -58,6 +59,9 @@ public class myEntity : Watson.SecretConnect.SecretEF
 }
 ```
 # 在Ado.Net中使用
+## 引用NuGet
+        Install-Package Watson.AdoDotNet
+## 修改DataAccess
 修改DataAccess数据连接类的继承关系
 ```CSharp
 public class myDataAccess : Watson.AdoDotNet.MsSql|Oracle|MySql
