@@ -59,8 +59,10 @@ public class myEntity : Watson.SecretConnect.SecretEF
 ```
 # 在Ado.Net中使用
 修改DataAccess数据连接类的继承关系
+```CSharp
 public class myDataAccess : Watson.AdoDotNet.MsSql|Oracle|MySql
 {
   public myDataAccess() : base() {}
   public myDataAccess(string nameOrConnectionString) : base(nameOrConnectionString) {}
 }
+```
