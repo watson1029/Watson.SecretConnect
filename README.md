@@ -14,7 +14,7 @@ Watson.SecretConnect
 6. AttachIV摘要后按【一定规则】提取128位作为DesIV
 7. 使用Des加密算法加密512位IV -> 输出SecretIV
 
-# EntityFramework使用方法
+# 使用方法
 ## 1. 生成SecretConnect和SecretIV
 1.1 运行Watson.SecretGenerate.exe
 
@@ -47,13 +47,20 @@ Watson.SecretConnect
   </appSettings>
 </configuration>
 ```
-## 4. 修改Context继承
-修改Context.cs和Context.tt
+# 在EntityFramework中使用
+修改Context.cs和Context.tt的继承关系
 
 从继承System.Data.Entity.DbContext修改成继承Watson.SecretConnect.SecretEF
 ```CSharp
-public class myEntity : SecretEF
+public class myEntity : Watson.SecretConnect.SecretEF
 {
   public myEntity() : base("name=ConnectionString") {}
 }
 ```
+# 在Ado.Net中使用
+修改DataAccess数据连接类的继承关系
+public class myDataAccess : Watson.AdoDotNet.MsSql|Oracle|MySql
+{
+  public myDataAccess() : base() {}
+  public myDataAccess(string nameOrConnectionString) : base(nameOrConnectionString) {}
+}
