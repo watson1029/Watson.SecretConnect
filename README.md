@@ -24,7 +24,7 @@ Watson.SecretConnect
 
 ![generate images](Watson.SecretConnect/加密截图.png)
 ## 2. 引用NuGet
-        Install-Package Watson.SecretConnect
+        Install-Package Watson.SecretConnect -version 1.1.0
 ## 3. 添加配置文件节点
 3.1 添加ConnectionString
 ```CSharp
